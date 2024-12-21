@@ -561,24 +561,24 @@ namespace Assignment_Session04
 
             #region 20.Write a Program to Print One Dimensional Array in Reverse Order
             // Take Matrix size From User:
-            Console.Write("Pls Enter The Matrix Size: ");
-            bool isParsed = int.TryParse(Console.ReadLine(), out int arraySize);
-            if (isParsed)
-            {
-                int[] arr = new int[arraySize];
-                for (int i = 0; i < arr.Length;)
-                {
-                    Console.WriteLine($"Pls Element Number {i + 1}: ");
-                    bool Flag = int.TryParse(Console.ReadLine(), out arr[i]);
-                    if (Flag) ++i;
-                }
-                Array.Reverse(arr);
-                Console.WriteLine($"Reversed array:  {string.Join(" ", arr)}");
-            }
-            else
-            {
-                Console.WriteLine("Error: Invalid Matrix Size");
-            }
+            // Console.Write("Pls Enter The Matrix Size: ");
+            // bool isParsed = int.TryParse(Console.ReadLine(), out int arraySize);
+            // if (isParsed)
+            // {
+            //     int[] arr = new int[arraySize];
+            //     for (int i = 0; i < arr.Length;)
+            //     {
+            //         Console.WriteLine($"Pls Element Number {i + 1}: ");
+            //         bool Flag = int.TryParse(Console.ReadLine(), out arr[i]);
+            //         if (Flag) ++i;
+            //     }
+            //     Array.Reverse(arr);
+            //     Console.WriteLine($"Reversed array:  {string.Join(" ", arr)}");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Error: Invalid Matrix Size");
+            // }
             #endregion
         }
     }
